@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Product } from '@/interfaces';
 import Image from 'next/image';
 import Link from 'next/link';
+import { formatPrice } from '@/helpers';
 
 interface Props {
   product: Product;
@@ -29,7 +30,7 @@ export const ProductGridItem = ({ product }: Props) => {
         <Link href={`/product/${product.slug}`} className="hover:text-blue-600">
           {product.title}
         </Link>
-        <span className="font-bold">${product.price}</span>
+        <span className="font-bold">{formatPrice(product.price)}</span>
       </div>
     </div>
   );

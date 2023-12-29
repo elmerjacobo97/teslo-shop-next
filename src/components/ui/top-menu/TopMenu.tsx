@@ -23,7 +23,7 @@ export const TopMenu = () => {
         <Link href="/category/women" className="m-2 p-2 rounded-md transition-all hover:bg-gray-100">
           Mujeres
         </Link>
-        <Link href="/category/kids" className="m-2 p-2 rounded-md transition-all hover:bg-gray-100">
+        <Link href="/category/kid" className="m-2 p-2 rounded-md transition-all hover:bg-gray-100">
           Niños
         </Link>
       </div>
@@ -36,7 +36,7 @@ export const TopMenu = () => {
         <Link href="/cart">
           <div className="relative">
             <div className="absolute rounded-full flex justify-center items-center w-4 h-4 bg-blue-600 top-0.5 right-1">
-              <span className="text-sm text-white">3</span>
+              <span className="text-xs text-white">3</span>
             </div>
             <div className="p-2 rounded-md transition-all hover:bg-gray-100">
               <IoCartOutline size={26} />
