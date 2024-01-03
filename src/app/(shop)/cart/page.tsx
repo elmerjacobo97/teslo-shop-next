@@ -1,3 +1,4 @@
+import { redirect } from 'next/navigation';
 import { QuantitySelector, Title } from '@/components';
 import { initialData } from '@/seed/seed';
 import Link from 'next/link';
@@ -14,6 +15,8 @@ const productsInCart = [
 ];
 
 export default function CartPage() {
+  // TODO: redirect('/empty');
+
   return (
     <div className="max-w-5xl mx-auto px-4">
       <Title title="Carrito" />
@@ -40,7 +43,7 @@ export default function CartPage() {
             </div>
           ))}
         </div>
-        <div className="lg:w-1/3 bg-white rounded-xl shadow-lg p-5 mt-5 max-h-80 overflow-auto">
+        <div className="lg:w-1/3 bg-white rounded-xl shadow-lg p-5 mt-5 h-fit">
           <h2 className="text-2xl font-bold mb-2">Resumen del pedido</h2>
           <div className="mb-4">
             <div className="flex justify-between">

@@ -1,4 +1,4 @@
-import { QuantitySelector, Title } from '@/components';
+import { Title } from '@/components';
 import { initialData } from '@/seed/seed';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -42,7 +42,7 @@ export default function CheckoutPage() {
             </div>
           ))}
         </div>
-        <div className="lg:w-1/3 bg-white rounded-xl shadow-lg p-5 mt-5 max-h-[550px] overflow-auto">
+        <div className="lg:w-1/3 bg-white rounded-xl shadow-lg p-5 mt-5 h-fit">
           <h2 className="text-2xl font-bold mb-2">Dirección de entrega</h2>
           <div className="space-y-2 mb-4">
             <p>Elmer Jacobo</p>
